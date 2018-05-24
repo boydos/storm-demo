@@ -32,7 +32,6 @@ public class StormMain {
 
         LocalCluster cluster = new LocalCluster();
         cluster.submitTopology("mycluster", config, builder.createTopology());
-        StormSubmitter.submitTopology();
         Thread.sleep(6000);
         cluster.shutdown();
     }
